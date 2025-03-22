@@ -1,4 +1,3 @@
-import React from "react";
 const MentalHealth = () => {
   // Simulated state management
   const userLocation = "United States"; // Would be determined dynamically

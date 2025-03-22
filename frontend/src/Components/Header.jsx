@@ -74,6 +74,9 @@ const Header = () => {
           <NavLink to="/face-recognition" isActive={location.pathname === "/face-recognition"}>
             Face Recognition
           </NavLink>
+          <NavLink to="/mental-health" isActive={location.pathname === "/mental-health"}>
+          Mental Health Support
+          </NavLink>
         </div>
 
         {/* Logout and Profile Button */}

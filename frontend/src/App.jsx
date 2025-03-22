@@ -9,6 +9,7 @@ import TextEditor from "./Pages/TextEditor";
 import ImageGeneratorPage from "./Pages/ImageGeneratorPage";
 import Register from "./Pages/register";
 import Blog from "./Pages/Blog";
+import MentalHealth from "./Pages/MentalHealth";
 import Logi from "./Pages/login";
 import ContactUs from "./Pages/ContactUs";
 import GoogleFitIntegration from './Components/GoogleFitIntegration';
@@ -60,6 +61,8 @@ const App = () => {
             />
             <Route path="/text-editor" element={<TextEditor />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/mental-health" element={<MentalHealth />} />
+
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Logi />} />              
             <Route path="/generate-images" element={<ImageGeneratorPage />} />
