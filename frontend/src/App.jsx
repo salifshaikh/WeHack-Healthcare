@@ -19,6 +19,8 @@ import StoryFeedback from "./Pages/Feedback";
 import Dashboard from "./Pages/Dashboard";
 import AccidentDetection from "./Pages/AccidentDetection";
 import FaceRecognition from "./Pages/FaceRecognition";
+import FallDetectionEmergency from "./Components/FallDetectionEmergency";
+
 
 // Import the new VideoCall page
 import VideoCall from "./Pages/VideoCall";
@@ -80,6 +82,9 @@ const App = () => {
             <Route path="/face-recognition" element={<FaceRecognition />} />
             {/* New route for video call */}
             <Route path="/video-call" element={<VideoCall />} />
+            {/* New route for fall detection */}
+            <Route path="/fall-detection" element={<FallDetectionEmergency />} />
+            
           </Routes>
           <Footer />
         </BrowserRouter>
