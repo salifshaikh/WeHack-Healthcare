@@ -1,3 +1,6 @@
+import { Link} from "react-router-dom";
+
+
 const MentalHealth = () => {
   // Simulated state management
   const userLocation = "United States"; // Would be determined dynamically
@@ -188,9 +191,11 @@ const MentalHealth = () => {
               Explore our resources, connect with professionals, and begin your path to wellness.
             </p>
             <div className="inline-flex p-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500">
+              <Link to="/health-assessment">
               <button className="px-8 py-3 rounded-full bg-[#131438] hover:bg-[#1a1b3a] transition-all text-xl font-medium">
                 Take Mental Health Assessment
               </button>
+              </Link>
             </div>
           </div>
           
@@ -283,6 +288,7 @@ const MentalHealth = () => {
                     </div>
                     <span className="text-lg font-semibold text-purple-300">{therapist.price}/session</span>
                   </div>
+                  <Link to="/book-session">
                   <button 
                     onClick={() => bookSession(therapist)}
                     className={`w-full py-2 rounded-lg font-medium transition-all ${
@@ -294,6 +300,7 @@ const MentalHealth = () => {
                   >
                     {therapist.available ? 'Book Session' : 'Currently Unavailable'}
                   </button>
+                  </Link>
                 </div>
               </div>
             ))}

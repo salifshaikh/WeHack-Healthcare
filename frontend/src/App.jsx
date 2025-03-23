@@ -20,8 +20,8 @@ import Dashboard from "./Pages/Dashboard";
 import AccidentDetection from "./Pages/AccidentDetection";
 import FaceRecognition from "./Pages/FaceRecognition";
 import FallDetectionEmergency from "./Components/FallDetectionEmergency";
-
-
+import HealthAssessment from "../src/Pages/HealthAssessment";
+import BookSession from "../src/Pages/BookSession";
 // Import the new VideoCall page
 import VideoCall from "./Pages/VideoCall";
 
@@ -64,8 +64,10 @@ const App = () => {
             <Route path="/text-editor" element={<TextEditor />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/mental-health" element={<MentalHealth />} />
-
             <Route path="/register" element={<Register />} />
+            <Route path="/book-session" element={<BookSession />} />
+
+            <Route path="/health-assessment" element={<HealthAssessment />} />
             <Route path="/login" element={<Logi />} />              
             <Route path="/generate-images" element={<ImageGeneratorPage />} />
             <Route path="/ambulance-tracker" element={<StoryGenerator />} />

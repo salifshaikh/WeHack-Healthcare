@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 
 const HealthAssessment = () => {
@@ -204,6 +203,7 @@ const HealthAssessment = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center py-12 px-4 bg-gradient-to-b from-[#0a0b1d] to-[#131438] text-white">
       {/* Background Elements */}
+      <br></br>
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/3 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/3 right-1/4 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl"></div>

@@ -1,5 +1,5 @@
-import React from "react";
 import { useState } from "react";
+import PropTypes from 'prop-types';
 
 const BookSession = ({ doctor, onClose }) => {
     const [step, setStep] = useState(1);
@@ -710,5 +710,16 @@ const BookSession = ({ doctor, onClose }) => {
       </div>
     );
   };
-  
+  BookSession.propTypes = {
+    doctor: PropTypes.shape({
+      name: PropTypes.string,
+      specialty: PropTypes.string,
+      image: PropTypes.string,
+      availability: PropTypes.arrayOf(PropTypes.string),
+      rating: PropTypes.number,
+      reviews: PropTypes.number,
+    }).isRequired,
+    onClose: PropTypes.func.isRequired,
+  };
+
   export default BookSession;
