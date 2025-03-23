@@ -19,10 +19,9 @@ import StoryFeedback from "./Pages/Feedback";
 import Dashboard from "./Pages/Dashboard";
 import AccidentDetection from "./Pages/AccidentDetection";
 import FaceRecognition from "./Pages/FaceRecognition";
-import FallDetectionEmergency from "./Components/FallDetectionEmergency";
 import HealthAssessment from "../src/Pages/HealthAssessment";
 import BookSession from "../src/Pages/BookSession";
-// Import the new VideoCall page
+import FallDetectionEmergency from "./Components/FallDetectionEmergency"
 import VideoCall from "./Pages/VideoCall";
 
 console.log('App component rendering');
@@ -66,6 +65,7 @@ const App = () => {
             <Route path="/mental-health" element={<MentalHealth />} />
             <Route path="/register" element={<Register />} />
             <Route path="/book-session" element={<BookSession />} />
+            <Route path="/fall-detection" element={<FallDetectionEmergency />} />
 
             <Route path="/health-assessment" element={<HealthAssessment />} />
             <Route path="/login" element={<Logi />} />              

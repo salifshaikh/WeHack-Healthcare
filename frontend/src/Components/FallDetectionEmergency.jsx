@@ -851,15 +851,19 @@ const FallDetectionEmergency = () => {
   };
   
   return (
-    <div className="p-6 max-w-5xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+    
+    <div className="p-6 max-w-5xl mx-auto bg-[#0a0b1d] rounded-xl shadow-lg overflow-hidden">
+      <br></br>
+      <br></br>
+      <br></br>
       <div className="border-b border-gray-200 pb-4 mb-4">
-        <h2 className="text-2xl font-bold text-gray-800 flex items-center">
+        <h2 className="text-2xl font-bold text-white flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mr-2 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
           </svg>
           Emergency Fall Detection
         </h2>
-        <p className="text-gray-600 mt-1">Automatic fall detection with voice-activated emergency response</p>
+        <p className="text-white mt-1">Automatic fall detection with voice-activated emergency response</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
