@@ -283,12 +283,20 @@ const FaceRecognition = () => {
   }, [cameraActive]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-[#0a0b1d] text-black">
       {/* Header */}
-      <header className="bg-blue-600 text-white p-4 shadow-md">
-        <h1 className="text-2xl font-bold">Health Card Identification System</h1>
-        <p className="text-sm opacity-80">Secure blockchain-based health records</p>
-      </header>
+      <br></br>      <br></br>
+      <br></br>
+
+      <div className="text-center mb-12">
+  <h1 className="text-5xl font-bold mb-3">
+    <span className="text-white">Face</span>
+    <span className="text-red-500"> Recognition</span>
+  </h1>
+  <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+    Advanced AI-powered verification for secure access to health records
+  </p>
+</div>
 
       {/* Main Content */}
       <main className="flex flex-col md:flex-row flex-1 p-4 gap-6">
